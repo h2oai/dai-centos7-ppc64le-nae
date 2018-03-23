@@ -5,9 +5,9 @@ RUN yum -y update && yum -y wget install zip unzip xz tar file sudo openssh-serv
 
 RUN curl -OL https://developer.nvidia.com/compute/cuda/8.0/prod/local_installers/cuda-repo-rhel7-8-0-local-ga2-8.0.54-1.ppc64le-rpm && rpm -ivh cuda-repo-rhel7-8-0-local-ga2-8.0.54-1.ppc64le-rpm && rm -f cuda-repo-rhel7-8-0-local-ga2-8.0.54-1.ppc64le-rpm && yum -y install cuda-toolkit-8-0 && yum clean all && rpm -e cuda-repo-rhel7-8-0-local-ga2
 
-RUN wget https://s3.amazonaws.com/artifacts.h2o.ai/releases/ai/h2o/dai/1.0.25/ppc64le-centos7/dai-1.0.25-1.ppc64le.rpm
+#RUN wget https://s3.amazonaws.com/artifacts.h2o.ai/releases/ai/h2o/dai/1.0.25/ppc64le-centos7/dai-1.0.25-1.ppc64le.rpm
 
-RUN rpm -ivh ppc64le-centos7/dai-1.0.25-1.ppc64le.rpm
+#RUN rpm -ivh ppc64le-centos7/dai-1.0.25-1.ppc64le.rpm
 
 # Nimbix JARVICE emulation
 RUN curl -H 'Cache-Control: no-cache' \
@@ -23,6 +23,6 @@ RUN mkdir -p /usr/lib/powerpc64le-linux-gnu
 COPY powerpc64le-linux-gnu.conf /etc/ld.so.conf.d/powerpc64le-linux-gnu.conf
 
 # Nimbix Integrations
-COPY NAE/AppDef.json /etc/NAE/AppDef.json
-COPY NAE/AppDef.png /etc//NAE/default.png
-COPY NAE/screenshot.png /etc/NAE/screenshot.png
+#COPY NAE/AppDef.json /etc/NAE/AppDef.json
+#COPY NAE/AppDef.png /etc//NAE/default.png
+#COPY NAE/screenshot.png /etc/NAE/screenshot.png
