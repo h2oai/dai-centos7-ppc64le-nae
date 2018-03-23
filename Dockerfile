@@ -5,7 +5,7 @@ RUN yum clean all && yum -y update
 
 RUN yum -y update && yum -y wget install zip unzip xz tar file sudo openssh-server openssh-clients infiniband-diags openmpi perftest libibverbs-utils libmthca libcxgb4 libmlx4 libmlx5 dapl compat-dapl passwd && yum clean all
 
-RUN curl -OL https://developer.nvidia.com/compute/cuda/8.0/prod/local_installers/cuda-repo-rhel7-8-0-local-ga2-8.0.54-1.ppc64le-rpm && rpm -ivh cuda-repo-rhel7-8-0-local-ga2-8.0.54-1.ppc64le-rpm && rm -f cuda-repo-rhel7-8-0-local-ga2-8.0.54-1.ppc64le-rpm && yum -y install cuda-toolkit-8-0 && yum clean all && rpm -e cuda-repo-rhel7-8-0-local-ga2
+#RUN curl -OL https://developer.nvidia.com/compute/cuda/8.0/prod/local_installers/cuda-repo-rhel7-8-0-local-ga2-8.0.54-1.ppc64le-rpm && rpm -ivh cuda-repo-rhel7-8-0-local-ga2-8.0.54-1.ppc64le-rpm && rm -f cuda-repo-rhel7-8-0-local-ga2-8.0.54-1.ppc64le-rpm && yum -y install cuda-toolkit-8-0 && yum clean all && rpm -e cuda-repo-rhel7-8-0-local-ga2
 
 #RUN wget https://s3.amazonaws.com/artifacts.h2o.ai/releases/ai/h2o/dai/1.0.25/ppc64le-centos7/dai-1.0.25-1.ppc64le.rpm
 
