@@ -1,15 +1,14 @@
 {
-    "name": "DriverlessAI 1.0.0",
-    "description": "rel-1.0.0",
+    "name": "DriverlessAI 1.0.25 Centos7",
+    "description": "rel-1.0.25",
     "author": "h2o.ai",
     "licensed": true,
     "classifications": [
         "Machine Learning/Deep Learning"
     ],
     "machines": [
-        "ng5",
-        "ngd5",
-        "ngo8"
+        "np8gk*",
+        "np8g*"
     ],
     "scale_max": 1,
     "vault-types": [
