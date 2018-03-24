@@ -1,5 +1,5 @@
 FROM nimbix/centos-cuda-ppc64le
-MAINTAINER Nimbix, Inc.
+MAINTAINER H2o.ai
 
 RUN yum -y install yum-plugin-ovl && yum -y update && yum -y install java 
 
