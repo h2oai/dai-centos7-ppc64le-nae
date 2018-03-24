@@ -3,7 +3,7 @@ MAINTAINER Nimbix, Inc.
 
 RUN curl https://s3.amazonaws.com/artifacts.h2o.ai/releases/ai/h2o/dai/1.0.25/ppc64le-centos7/dai-1.0.25-1.ppc64le.rpm --output dai-1.0.25-1.ppc64le.rpm
 
-RUN rpm -ivh ppc64le-centos7/dai-1.0.25-1.ppc64le.rpm
+RUN rpm -ivh dai-1.0.25-1.ppc64le.rpm
 
 RUN yum -y install java
 
