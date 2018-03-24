@@ -7,6 +7,8 @@ RUN curl https://s3.amazonaws.com/artifacts.h2o.ai/releases/ai/h2o/dai/1.0.25/pp
 
 RUN rpm -ivh dai-1.0.25-1.ppc64le.rpm
 
+RUN chown -R nimbix:nimbix /opt/h2oai
+
 # Expose port 22 for local JARVICE emulation in docker
 EXPOSE 22
 EXPOSE 12345
