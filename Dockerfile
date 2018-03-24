@@ -1,11 +1,7 @@
 FROM nimbix/centos-cuda-ppc64le
 MAINTAINER Nimbix, Inc.
 
-RUN yum clean all && yum -y update
-
-RUN yum -y install wget
-
-RUN wget https://s3.amazonaws.com/artifacts.h2o.ai/releases/ai/h2o/dai/1.0.25/ppc64le-centos7/dai-1.0.25-1.ppc64le.rpm
+RUN curl https://s3.amazonaws.com/artifacts.h2o.ai/releases/ai/h2o/dai/1.0.25/ppc64le-centos7/dai-1.0.25-1.ppc64le.rpm --output dai-1.0.25-1.ppc64le.rpm
 
 RUN rpm -ivh ppc64le-centos7/dai-1.0.25-1.ppc64le.rpm
 
