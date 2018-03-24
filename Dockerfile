@@ -1,5 +1,4 @@
 FROM nvidia/cuda-ppc64le:9.0-cudnn7-runtime-centos7
-
 MAINTAINER H2o.ai <ops@h2o.ai>
 
 # base OS
