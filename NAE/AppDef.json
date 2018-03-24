@@ -19,8 +19,8 @@
         "OBJECT"
     ],
     "commands": {
-      "H2oAI": {
-            "path": "/opt/h2oai/dai/run.sh",
+      "DAI": {
+            "path": "/opt/h2oai/dai/run-h2oai.sh",
             "interactive": true,
             "name": "H2oAI Server",
             "description": "Run the H2oAI Server",
