@@ -5,7 +5,7 @@ RUN curl https://s3.amazonaws.com/artifacts.h2o.ai/releases/ai/h2o/dai/1.0.25/pp
 
 RUN rpm -ivh dai-1.0.25-1.ppc64le.rpm
 
-RUN yum -y install java
+RUN yum -y install yum-pugin-ovl && yum -y install java 
 
 # Expose port 22 for local JARVICE emulation in docker
 EXPOSE 22
