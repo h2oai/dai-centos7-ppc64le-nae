@@ -1,6 +1,6 @@
 {
-    "name": "DriverlessAI 1.0.25 Centos7 ppc64le",
-    "description": "rel-1.0.25 ppc64le",
+    "name": "DriverlessAI 1.0.30 Centos7 ppc64le",
+    "description": "rel-1.0.30 ppc64le",
     "author": "h2o.ai",
     "licensed": true,
     "classifications": [
