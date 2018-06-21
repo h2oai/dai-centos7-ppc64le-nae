@@ -4,7 +4,7 @@ MAINTAINER H2o.ai <ops@h2o.ai>
 RUN yum -y install yum-plugin-ovl && \
     yum -y install epel-release && \
     yum -y update && \
-    yum -y install java sudo zip curl nginx
+    yum -y install java sudo zip curl nginx libgomp
 
 RUN curl https://s3.amazonaws.com/artifacts.h2o.ai/releases/ai/h2o/dai/rel-1.1.4-4/ppc64le-centos7/dai-1.1.4-1.ppc64le.rpm --output dai-1.1.4-1.ppc64le.rpm && \
     rpm -ivh dai-1.1.4-1.ppc64le.rpm && \
