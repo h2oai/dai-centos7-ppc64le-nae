@@ -1,4 +1,4 @@
-FROM nvidia/cuda-ppc64le:9.0-cudnn7-runtime-centos7
+FROM nvidia/cuda-ppc64le:9.2-cudnn7-runtime-centos7
 MAINTAINER H2o.ai <ops@h2o.ai>
 
 RUN yum -y install yum-plugin-ovl && \
@@ -6,9 +6,9 @@ RUN yum -y install yum-plugin-ovl && \
     yum -y update && \
     yum -y install java sudo zip curl nginx libgomp
 
-RUN curl https://s3.amazonaws.com/artifacts.h2o.ai/releases/ai/h2o/dai/rel-1.1.4-4/ppc64le-centos7/dai-1.1.4-1.ppc64le.rpm --output dai-1.1.4-1.ppc64le.rpm && \
-    rpm -ivh dai-1.1.4-1.ppc64le.rpm && \
-    rm dai-1.1.4-1.ppc64le.rpm
+RUN curl http://artifacts.h2o.ai.s3.amazonaws.com/releases/ai/h2o/dai/rel-1.2.1-2/ppc64le-centos7/dai-1.2.1-1.ppc64le.rpm --output dai-1.2.1-1.ppc64le.rpm && \
+    rpm -ivh dai-1.2.1-1.ppc64le.rpm && \
+    rm dai-1.2.1-1.ppc64le.rpm
 
 RUN curl -H 'Cache-Control: no-cache' \
     https://raw.githubusercontent.com/nimbix/image-common/master/install-nimbix.sh \
