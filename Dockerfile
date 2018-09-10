@@ -6,9 +6,9 @@ RUN yum -y install yum-plugin-ovl && \
     yum -y update && \
     yum -y install java sudo zip curl nginx libgomp
 
-RUN curl https://s3.amazonaws.com/artifacts.h2o.ai/releases/ai/h2o/dai/rel-1.3.0-15/ppc64le-centos7/dai-1.3.0-1.ppc64le.rpm --output dai-1.3.0-1.ppc64le.rpm && \
-    rpm -ivh dai-1.3.0-1.ppc64le.rpm && \
-    rm dai-1.3.0-1.ppc64le.rpm
+RUN curl https://s3.amazonaws.com/artifacts.h2o.ai/releases/ai/h2o/dai/rel-1.2.2-6/ppc64le-centos7/dai-1.2.2-1.ppc64le.rpm --output dai-1.2.2-1.ppc64le.rpm && \
+    rpm -ivh dai-1.2.2-1.ppc64le.rpm && \
+    rm dai-1.2.2-1.ppc64le.rpm
 
 RUN curl -H 'Cache-Control: no-cache' \
     https://raw.githubusercontent.com/nimbix/image-common/master/install-nimbix.sh \
